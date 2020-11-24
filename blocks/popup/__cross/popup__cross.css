@@ -1,0 +1,20 @@
+.popup__cross {
+  width: 30px;
+  position: absolute;
+  right: -37px;
+  top: -37px;
+  cursor: pointer;
+}
+
+.popup__cross:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 882px) {
+  .popup__cross {
+      width: 26px;
+      position: absolute;
+      right: 1px;
+      top: -50px;
+  }
+}

@@ -1,0 +1,11 @@
+.elements__description {
+  height: 79px;
+  width: 282px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+}

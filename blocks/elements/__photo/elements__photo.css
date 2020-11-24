@@ -1,0 +1,10 @@
+.elements__photo {
+  height: 282px;
+  width: 282px;
+  background-position: center;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+  background-image: url('../../../images/_photo-2.jpeg');
+}
