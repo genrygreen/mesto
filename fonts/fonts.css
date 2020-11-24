@@ -8,6 +8,14 @@
 
 @font-face {
   font-family: "Inter";
+  src:  url("Inter-Medium.woff2"),
+        url("Inter-Medium.woff2");
+  font-weight: 500;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "Inter";
   src:  url("Inter-Black.woff2"),
         url("Inter-Black.woff");
   font-weight: 900;
