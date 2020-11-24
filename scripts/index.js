@@ -7,7 +7,6 @@ let subtitle = document.querySelector('.profile__description');
 let nameField = document.querySelector('.popup__item-title');
 let jobField = document.querySelector('.popup__item-subtitle');
 
-// функция показатьВсплывающееОкно
 function showPopup() {
   popup.classList.add('popup_opened');
 }
@@ -27,3 +26,4 @@ function submitForm(event) {
 }
 
 form.addEventListener ('submit', submitForm)
+form.addEventListener('submit', closePopup);
