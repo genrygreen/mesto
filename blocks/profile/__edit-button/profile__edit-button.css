@@ -7,6 +7,13 @@
   margin: 15px 0 0 17px;
   grid-area: edit-button;
   cursor: pointer;
+  background-image: url('../../../images/profile__edit-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile__edit-button:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 600px) {

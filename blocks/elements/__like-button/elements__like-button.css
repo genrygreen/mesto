@@ -6,4 +6,12 @@
   border: none;
   margin: 0 20px 0 0;
   padding: 0;
+  background-image: url('../../../images/elements__like-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.elements__like-button:hover {
+  opacity: 0.6;
 }
