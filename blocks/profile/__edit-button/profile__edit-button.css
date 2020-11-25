@@ -18,6 +18,9 @@
 
 @media screen and (max-width: 600px) {
   .profile__edit-button  {
-    margin-top: 6px;
+    margin-top: 9px;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../../images/profile__edit-button_small.svg');
   }
 }

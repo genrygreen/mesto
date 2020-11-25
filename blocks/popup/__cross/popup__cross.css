@@ -1,9 +1,14 @@
 .popup__cross {
   width: 30px;
+  height: 30px;
   position: absolute;
   right: -37px;
   top: -37px;
   cursor: pointer;
+  background-color: unset;
+  background: url('../../../images/close-icon.svg') center no-repeat;
+  background-size: contain;
+  border: none;
 }
 
 .popup__cross:hover {
@@ -12,9 +17,8 @@
 
 @media screen and (max-width: 882px) {
   .popup__cross {
-      width: 26px;
-      position: absolute;
-      right: 1px;
-      top: -50px;
+      width: 18px;
+      right: 5px;
+      top: -45px;
   }
 }
