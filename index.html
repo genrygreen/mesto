@@ -31,42 +31,44 @@
 
       <section class="elements">
         <article class="elements__item">
-          <div class="elements__photo elements__photo-one"></div>
+
+          <div class="elements__photo" style="background-image: url(./images/_photo-1.jpg)">
+          <img class="photo"></div>
           <div class="elements__description">
             <h2 class="elements__title">Кенгуру</h2>
             <button class="elements__like-button" type="button" aria-label="Добавить карточку"></button>
           </div>
         </article>
         <article class="elements__item">
-          <div class="elements__photo elements__photo-two"></div>
+          <div class="elements__photo" style="background-image: url(./images/_photo-2.jpeg)"></div>
           <div class="elements__description">
             <h2 class="elements__title">Очень милая панда</h2>
             <button class="elements__like-button" type="button"></button>
           </div>
         </article>
         <article class="elements__item">
-          <div class="elements__photo elements__photo-three"></div>
+          <div class="elements__photo" style="background-image: url(./images/_photo-3.jpeg)"></div>
           <div class="elements__description">
             <h2 class="elements__title">Смусмумрики</h2>
             <button class="elements__like-button" type="button"></button>
           </div>
         </article>
         <article class="elements__item">
-          <div class="elements__photo elements__photo-four"></div>
+          <div class="elements__photo" style="background-image: url(./images/_photo-4.jpeg)"></div>
           <div class="elements__description">
             <h2 class="elements__title">Пчёлка слезает</h2>
             <button class="elements__like-button" type="button"></button>
           </div>
         </article>
         <article class="elements__item">
-          <div class="elements__photo elements__photo-five"></div>
+          <div class="elements__photo" style="background-image: url(./images/_photo-5.jpeg)"></div>
           <div class="elements__description">
             <h2 class="elements__title">Калипсо</h2>
             <button class="elements__like-button" type="button"></button>
           </div>
         </article>
         <article class="elements__item">
-          <div class="elements__photo elements__photo-six"></div>
+          <div class="elements__photo" style="background-image: url(./images/_photo-6.jpeg)"></div>
           <div class="elements__description">
             <h2 class="elements__title">Калабанга</h2>
             <button class="elements__like-button" type="button"></button>
@@ -85,8 +87,8 @@
     <form action="not-empty" name="form-edit-popup" method="POST" class="popup__form">
       <h2 class="popup__title">Редактировать профиль</h2>
       <fieldset class="popup__editor">
-        <input type="text" name="profile-title" class="popup__item popup__item_title">
-        <input type="text" name="profile-job" class="popup__item popup__item_subtitle">
+        <input type="text" name="profile-title" class="popup__item popup__item_type_title">
+        <input type="text" name="profile-job" class="popup__item popup__item_type_subtitle">
       </fieldset>
       <button class="popup__button" type="submit">Сохранить</button>
       <button class="popup__cross" type="button" name="Закрыть"></button>

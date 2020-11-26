@@ -4,8 +4,8 @@ let editButton = document.querySelector('.profile__edit-button');
 let form = document.querySelector('.popup__form');
 let title = document.querySelector('.profile__heading');
 let subtitle = document.querySelector('.profile__description');
-let nameField = document.querySelector('.popup__item_title');
-let jobField = document.querySelector('.popup__item_subtitle');
+let nameField = document.querySelector('.popup__item_type_title');
+let jobField = document.querySelector('.popup__item_type_subtitle');
 
 function showPopup() {
   popup.classList.add('popup_opened');
