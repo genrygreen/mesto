@@ -1,0 +1,4 @@
+.popup__big-place-pic {
+  width: 75vw;
+  object-fit: cover;
+}

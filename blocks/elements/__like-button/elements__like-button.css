@@ -10,13 +10,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  outline:none;
 }
 
 .elements__like-button:hover {
   opacity: 0.6;
-}
-
-.elements__like-button:active {
-  opacity: 1;
-  background-image: url('../../../images/union.svg');
 }

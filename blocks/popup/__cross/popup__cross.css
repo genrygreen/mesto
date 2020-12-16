@@ -9,6 +9,7 @@
   background: url('../../../images/close-icon.svg') center no-repeat;
   background-size: contain;
   border: none;
+  outline: none;
 }
 
 .popup__cross:hover {

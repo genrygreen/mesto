@@ -1,0 +1,13 @@
+.elements__remove {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  cursor: pointer;
+  background-color: unset;
+  background: url('../../../images/elements__remove.svg') center no-repeat;
+  background-size: contain;
+  border: none;
+  outline: none;
+}
