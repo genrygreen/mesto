@@ -9,7 +9,7 @@
   <title>Project Mesto</title>
 </head>
 
-<body class="page">
+<body class="page root">
   <div>
     <header class="header">
       <div class="header__logo">
@@ -42,8 +42,8 @@
     <form action="not-empty" name="form-edit-popup" method="POST" class="popup__form">
       <h2 class="popup__title">Редактировать профиль</h2>
       <fieldset class="popup__editor">
-        <input type="text" name="profile-title" class="popup__item popup__item_type_title">
-        <input type="text" name="profile-job" class="popup__item popup__item_type_subtitle">
+        <input type="text" name="profile-title" class="popup__item popup__item_type_title" required placeholder="Имя и Фамилия">
+        <input type="text" name="profile-job" class="popup__item popup__item_type_subtitle" required placeholder="Должность">
       </fieldset>
       <button class="popup__button" type="submit">Сохранить</button>
       <button class="popup__cross" type="button" name="Закрыть"></button>
@@ -56,12 +56,20 @@
       <fieldset class="popup__editor">
         <input type="text" name="place-title" class="popup__item popup__item_place-title" required
           placeholder="Название места">
-        <input type="text" name="place-link" class="popup__item popup__item_place-link" required
+        <input type="url" name="place-link" class="popup__item popup__item_place-link" required
           placeholder="Сайт страницы">
       </fieldset>
       <button class="popup__button" type="submit">Создать</button>
       <button class="popup__cross" type="button" name="Закрыть"></button>
     </form>
+  </div>
+
+  <div class="popup popup-big-place">
+    <div class="popup__big-place">
+      <button class="popup__cross" type="button" name="Закрыть"></button>
+      <img class="popup__big-place-pic" src="#" alt="фото">
+      <p class="popup__big-place-title"></p>
+    </div>
   </div>
 
   <template id="template-item">
@@ -74,14 +82,6 @@
       </div>
     </article>
   </template>
-
-  <div class="popup popup-big-place">
-    <div class="popup__big-place">
-      <button class="popup__cross-big-place" type="button" name="Закрыть"></button>
-      <img class="popup__big-place-pic" src="#" alt="фото">
-      <p class="popup__big-place-title"></p>
-    </div>
-  </div>
 
   <script src='./scripts/index.js'></script>
 </body>

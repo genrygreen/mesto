@@ -26,6 +26,7 @@ const initialCards = [
 ];
 
 // Переменные из 4-го спринта. Не стал их описывать 🥴
+const root = document.querySelector('.root');
 const popup = document.querySelector('.popup');
 const popupCloseButton = document.querySelector('.popup__cross');
 const editButton = document.querySelector('.profile__edit-button');
@@ -35,11 +36,9 @@ const title = document.querySelector('.profile__heading');
 const subtitle = document.querySelector('.profile__description');
 const nameField = document.querySelector('.popup__item_type_title');
 const jobField = document.querySelector('.popup__item_type_subtitle');
-
 const popupProfile = document.querySelector('.popup-profile'); // Попап профайла
 const popupPlace = document.querySelector('.popup-place'); // Попап места
 const closePlace = popupPlace.querySelector('.popup__cross'); // Крсетик попапа добавления метса
-const closeBigPic = document.querySelector('.popup__cross-big-place'); // Крестик попапа большой картинки
 const inputPlace = document.querySelector('.popup__item_place-title'); // Обращение к имени метса
 const inputLink = document.querySelector('.popup__item_place-link'); // Обращение к ссылке
 const createNewCard = document.querySelector('.popup__form-place'); // Обращение к форме попапа метса
@@ -50,6 +49,7 @@ const elementsPhoto = document.querySelector('.elements__photo'); // Обращ�
 const popupBigPic = document.querySelector('.popup-big-place'); // Попап с большой картинкой
 const bigPicTitle = document.querySelector('.popup__big-place-title'); // Подпись к попапу с большой картинкой
 const bigPic = document.querySelector('.popup__big-place-pic'); // Большая картинка на попапе
+const closeBigPic = popupBigPic.querySelector('.popup__cross'); // Крестик попапа большой картинки
 
 // Открытие попапа
 function openPopup(popup) {
@@ -73,24 +73,12 @@ function submitForm(event) {
 
 // Открытие попапа добавления места
 function showPlacePopup() {
-  inputPlace.value = '',
-  inputLink.value = ''
   openPopup(popupPlace);
 }
 
-// Закрытие попапа
-function closePopup() {
+// Функция закрфтия попапа
+function closePopup(popup) {
   popup.classList.remove('popup_opened');
-}
-
-// Закрытие попапа c большой картинкой
-function closePopupBigPic() {
-  popupBigPic.classList.remove('popup_opened');
-}
-
-// Закрытие попапа добавления места
-function closePopupPlace() {
-  popupPlace.classList.remove('popup_opened');
 }
 
 // Создание карточек
@@ -102,7 +90,8 @@ function createNewPlaceCard(event) {
   };
   const template = renderTemplateItem(place);
   places.prepend(template);
-  closePopupPlace(popupPlace);
+  closePopup(popupPlace);
+  createNewCard.reset();
 }
 
 // Функция подгружающая заготовки из 6-ти карточек
@@ -157,16 +146,19 @@ cardsOut();
 // Слушаетели
 editButton.addEventListener('click', showProfilePopup);
 addButton.addEventListener('click', showPlacePopup);
-popupCloseButton.addEventListener('click', closePopup);
 form.addEventListener('submit', submitForm);
 createNewCard.addEventListener('submit', createNewPlaceCard);
+root.addEventListener('click', root)
+popupCloseButton.addEventListener('click', () => {
+  closePopup(popup);
+});
 
 closePlace.addEventListener('click', () => {
-  closePopupPlace(popupPlace);
+  closePopup(popupPlace);
 });
 
 closeBigPic.addEventListener('click', () => {
-  closePopupBigPic(popupBigPic);
-});
+   closePopup(popupBigPic);
+ });
 
 

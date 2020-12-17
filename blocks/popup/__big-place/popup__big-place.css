@@ -9,4 +9,5 @@
   align-items: center;
   justify-content: center;
   box-shadow: none;
+  position: relative;
 }
